@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Cel \'cwiczenia}{1}%
+\contentsline {section}{\numberline {2}Schemat pogl\k adowy}{1}%
+\contentsline {section}{\numberline {3}Wykonanie \'cwiczenia}{1}%
+\contentsline {subsection}{\numberline {3.1}Metoda}{2}%
+\contentsline {subsection}{\numberline {3.2}II okno transmisyjne}{3}%
+\contentsline {subsubsection}{\numberline {3.2.1}Pierwszy kierunek}{3}%
+\contentsline {subsubsection}{\numberline {3.2.2}Drugi kierunek}{4}%
+\contentsline {subsection}{\numberline {3.3}III okno transmisyjne}{5}%
+\contentsline {section}{\numberline {4}Wnioski}{6}%
+\contentsline {subsection}{\numberline {4.1}Sprz\k et}{7}%
+\contentsline {subsection}{\numberline {4.2}Z\IeC {\l }\k aczka SC/UPC (u\.zyta w \'cwiczeniu) - charakterystyka}{7}%

@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Cel \'cwiczenia}{1}%
+\contentsline {section}{\numberline {2}Schemat pogl\k adowy}{1}%
+\contentsline {section}{\numberline {3}Wykonanie \'cwiczenia}{1}%
+\contentsline {subsection}{\numberline {3.1}Konfiguracja po\IeC {\l }\k aczenia}{1}%
+\contentsline {subsection}{\numberline {3.2}Konfiguracja sieci LAN}{1}%
+\contentsline {subsection}{\numberline {3.3}Charakterystyki sygna\IeC {\l }u ADSL}{3}%
+\contentsline {section}{\numberline {4}Wnioski}{5}%
+\contentsline {subsection}{\numberline {4.1}Sprawdzenie szczeg\'o\IeC {\l }\'ow urz\k adzenia}{5}%
+\contentsline {subsection}{\numberline {4.2}Realizacja test\'ow}{6}%
+\contentsline {subsection}{\numberline {4.3}PPPoE}{6}%
+\contentsline {subsection}{\numberline {4.4}Specyfikacja routera ADSL - Planet ADE-4400}{7}%

@@ -1,0 +1,297 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.23)  29 MAY 2020 01:56
+entering extended mode
+**./adsl.tex
+(adsl.tex
+LaTeX2e <2020-02-02> patch level 3
+L3 programming layer <2020-02-21>
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\cp1250.def"
+File: cp1250.def 2018/08/11 v1.3c Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/polski\polski.sty"
+Package: polski 2017/05/04 v1.3.4 Polish language package
+
+   Inputenc package detected. Catcodes not changed.
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count175
+\float@exts=\toks17
+\float@box=\box45
+\@float@everytoks=\toks18
+\@floatcapt=\box46
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-02-21 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count176
+\l__pdf_internal_box=\box47
+)
+(adsl.aux
+
+LaTeX Warning: Label `fig:s1' multiply defined.
+
+
+LaTeX Warning: Label `fig:s1' multiply defined.
+
+
+LaTeX Warning: Label `fig:s1' multiply defined.
+
+
+LaTeX Warning: Label `fig:s1' multiply defined.
+
+
+LaTeX Warning: Label `fig:s1' multiply defined.
+
+
+LaTeX Warning: Label `fig:s1' multiply defined.
+
+
+LaTeX Warning: Label `fig:s1' multiply defined.
+
+
+LaTeX Warning: Label `fig:s1' multiply defined.
+
+
+LaTeX Warning: Label `fig:s1' multiply defined.
+
+)
+\openout1 = `adsl.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+ ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count177
+\scratchdimen=\dimen137
+\scratchbox=\box48
+\nofMPsegments=\count178
+\nofMParguments=\count179
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count180
+\MPscratchDim=\dimen138
+\MPnumerator=\count181
+\makeMPintoPDFobject=\count182
+\everyMPtoPDFconversion=\toks20
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+<logo.png, id=1, 80.55093pt x 90.3375pt>
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 29.
+(pdftex.def)             Requested size: 80.55074pt x 90.33727pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 29.
+
+(adsl.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+)
+\tf@toc=\write3
+\openout3 = `adsl.toc'.
+
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \hfil 
+l.32 \end{titlepage}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[1
+
+{C:/Users/mwili/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo.png>
+]
+<schem.png, id=14, 728.7225pt x 389.95688pt>
+File: schem.png Graphic file (type png)
+<use schem.png>
+Package pdftex.def Info: schem.png  used on input line 39.
+(pdftex.def)             Requested size: 345.0pt x 184.61261pt.
+<Screenshot_4.png, id=15, 593.21625pt x 466.74374pt>
+File: Screenshot_4.png Graphic file (type png)
+<use Screenshot_4.png>
+Package pdftex.def Info: Screenshot_4.png  used on input line 48.
+(pdftex.def)             Requested size: 296.60739pt x 233.37129pt.
+<Screenshot_5.png, id=16, 355.3275pt x 285.31593pt>
+File: Screenshot_5.png Graphic file (type png)
+<use Screenshot_5.png>
+Package pdftex.def Info: Screenshot_5.png  used on input line 55.
+(pdftex.def)             Requested size: 177.6633pt x 142.65761pt.
+ [1 <./schem.png>] [2 <./Screenshot_4.png> <./Screenshot_5.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+<adslw.png, id=28, 996.72375pt x 441.90094pt>
+File: adslw.png Graphic file (type png)
+<use adslw.png>
+Package pdftex.def Info: adslw.png  used on input line 71.
+(pdftex.def)             Requested size: 398.68243pt x 176.75723pt.
+
+Overfull \hbox (53.68243pt too wide) in paragraph at lines 71--72
+ [] 
+ []
+
+<mod.png, id=29, 947.03813pt x 223.58531pt>
+File: mod.png Graphic file (type png)
+<use mod.png>
+Package pdftex.def Info: mod.png  used on input line 78.
+(pdftex.def)             Requested size: 378.80853pt x 89.43253pt.
+
+Overfull \hbox (33.80853pt too wide) in paragraph at lines 78--79
+ [] 
+ []
+
+<kat.png, id=30, 1277.52281pt x 223.58531pt>
+File: kat.png Graphic file (type png)
+<use kat.png>
+Package pdftex.def Info: kat.png  used on input line 86.
+(pdftex.def)             Requested size: 357.70395pt x 62.60345pt.
+
+Overfull \hbox (12.70395pt too wide) in paragraph at lines 86--87
+ [] 
+ []
+
+<nyq.png, id=31, 584.1825pt x 430.60875pt>
+File: nyq.png Graphic file (type png)
+<use nyq.png>
+Package pdftex.def Info: nyq.png  used on input line 93.
+(pdftex.def)             Requested size: 350.51219pt x 258.36723pt.
+
+Overfull \hbox (5.51219pt too wide) in paragraph at lines 93--94
+ [] 
+ []
+
+[3 <./adslw.png> <./mod.png>]
+<Screenshot_1.png, id=41, 408.77719pt x 143.03438pt>
+File: Screenshot_1.png Graphic file (type png)
+<use Screenshot_1.png>
+Package pdftex.def Info: Screenshot_1.png  used on input line 102.
+(pdftex.def)             Requested size: 286.14207pt x 100.12337pt.
+<Screenshot_2.png, id=42, 467.49657pt x 225.84375pt>
+File: Screenshot_2.png Graphic file (type png)
+<use Screenshot_2.png>
+Package pdftex.def Info: Screenshot_2.png  used on input line 109.
+(pdftex.def)             Requested size: 327.24536pt x 158.08954pt.
+ [4 <./kat.png> <./nyq.png>]
+<Screenshot_3.png, id=48, 401.24907pt x 344.03531pt>
+File: Screenshot_3.png Graphic file (type png)
+<use Screenshot_3.png>
+Package pdftex.def Info: Screenshot_3.png  used on input line 118.
+(pdftex.def)             Requested size: 312.973pt x 268.34647pt.
+ [5 <./Screenshot_1.png> <./Screenshot_2.png>]
+<blu.png, id=54, 658.71094pt x 430.60875pt>
+File: blu.png Graphic file (type png)
+<use blu.png>
+Package pdftex.def Info: blu.png  used on input line 130.
+(pdftex.def)             Requested size: 395.2296pt x 258.36723pt.
+
+Overfull \hbox (50.2296pt too wide) in paragraph at lines 130--131
+ [] 
+ []
+
+[6 <./Screenshot_3.png>] (adsl.lof)
+\tf@lof=\write4
+\openout4 = `adsl.lof'.
+
+ [7 <./blu.png>] (adsl.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1652 strings out of 481545
+ 22027 string characters out of 2923253
+ 252933 words of memory out of 3000000
+ 16918 multiletter control sequences out of 15000+200000
+ 541922 words of font info for 42 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 30i,7n,25p,619b,262s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\mwili\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+ecti1000.pk> <C:\Users\mwili\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecbx1200.pk> <C:\Users\mwili\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\mwili\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\mwili\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\mwili\AppData\Lo
+cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\mwili\
+AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Us
+ers\mwili\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.
+pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on adsl.pdf (8 pages, 494912 bytes).
+PDF statistics:
+ 379 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+

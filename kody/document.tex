@@ -1,0 +1,130 @@
+% !TeX spellcheck = pl_PL
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+\usepackage{float}
+\graphicspath{ {./res/} }
+%opening
+
+\begin{document}
+	\begin{titlepage}
+		\date{13 Czerwca 2020}
+		\title{Opracowanie Kodowañ do egzaminu EE.10}
+		\author{\medskip Micha³ Wiliñski, klasa IIID}
+		\maketitle
+		\vspace*{\fill}
+		\tableofcontents
+	\end{titlepage}
+	\section{AMI}
+	Omówiona zostanie ca³a rodzina kodów AMI. Najszerzej u¿ywanym i wartym uwagi jest AMI-1, reszta kodów rzadko pojawia siê na egzaminach i w literaturze.
+	\subsection{AMI-1}
+	Jest to kod bipolarny\footnote{Oznacza to ¿e mo¿e przyjmowaæ zarówno wartoœci dodatnie i ujemne} w którym "1"\footnote{W ten sposób ( za pomoc¹ cudzys³owu) oznaczane bêd¹ bity danych które chcemy zakodowaæ} logiczna mo¿e byæ kodowana za pomoc¹ 2 ró¿nych polaryzacji (-1)\footnote{W ten sposób (za pomoc¹ nawiasów) oznaczamy zakodowany bit} lub (+1). "0" logiczne jest kodowane za pomoc¹ jednej polaryzacji (0). Kod ten \textbf{zapobiega wystêpowaniu d³ugich ci¹gów jedynek jednak nie zapobiega wystêpowaniu d³ugich ci¹gów zer.} T³umacz¹c ten kod na prosty sposób - jedynkê kodujemy na przemian raz jako (+1) raz jako (-1) a zero pozostaje takie samo.
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.6]{r1}
+			\caption{Diagram kodu}
+			\label{fig:s1}
+		\end{center}
+	\end{figure}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.35]{r2}
+			\caption{Przyk³adowe kodowanie}
+			\label{fig:s1}
+		\end{center}
+	\end{figure}
+	\pagebreak
+	\subsection{AMI-2}
+	Jest to kod unipolarny\footnote{przeciwieñstwo bipolarnego - przymuje tylko wartoœci dodatnie.} w któryk "0" logiczne kodujemy jako (10) je¿eli bit poprzedzaj¹cy to (0) lub jako (01) jeœli bit poprzedzaj¹cy to (1). "1" kodujemy naprzemiennie jako (00) lub (11)
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.7]{r3}
+			\caption{Diagram kodu}
+			\label{fig:s1}
+		\end{center}
+	\end{figure}
+	\subsection{AMI-3}
+	Kod unipolarny, gdzie "0" logiczne kodowane jest jako (10) jeœli bit poprzedzaj¹cy to (1), a jeœli bit poprzedzaj¹cy to (0) to "0" kodujemy jako (01). "1" jest kodowana na zmianê jako (00) lub (11).
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.7]{r3}
+			\caption{Diagram kodu}
+			\label{fig:s1}
+		\end{center}
+	\end{figure}
+	\pagebreak
+	\section{HDB-3}
+	Kod HDB3 zamienia 4 kolejne bity o wartoœci 0 ci¹giem 000V lub B00V. Wyboru odpowiedniego ci¹gu dokonuje siê w celu, aby kolejne z³amania kodowe (wielokrotne wystêpowanie tego samego symbolu – tutaj zer, ang. violation) mia³y ró¿n¹ polaryzacjê, czyli oddzielone by³y nieparzyst¹ liczb¹ znaków + i ?. W praktyce powoduje to utrzymanie po³¹czenia pomiêdzy nadawc¹, a odbiorc¹ w czasie kodowania du¿ej liczby zer, która mo¿e wygl¹daæ jak zakoñczenie nadawania. To podejœcie przedstawia poni¿sza tabela:
+	\begin{table}[H]
+		\begin{center}
+			\includegraphics[scale=0.8]{r4}
+			\caption{Tabela ci¹gów HDB3}
+			\label{fig:s1}
+		\end{center}
+	\end{table}
+	W efekcie ka¿de 4 kolejne bity o wartoœci 0 s¹ zastêpowane jednym z ci¹gów: 000-, 000+, +00+ lub -00-. Aby okreœliæ który ci¹g musi byæ u¿yty, nale¿y zliczaæ znaki + i - od ostatniego wyst¹pienia bitu V. Jeœli ich liczba jest parzysta, to u¿yty bêdzie ci¹g +00+ lub -00-, a jeœli nieparzysta, to 000- lub 000+. Wiedz¹c jaki jest znak polaryzacji impulsu poprzedzaj¹cego 4 kolejne zera mo¿na dok³adnie okreœliæ jaki ci¹g musi byæ u¿yty. W przypadku 000V nastêpuje skopiowanie tego znaku polaryzacji w miejsce V, a w przypadku B00V w miejsce B i V wprowadzane s¹ impulsy o odwrotnej polaryzacji ni¿ impuls poprzedzaj¹cy.\\
+	\textbf{Przyk³adowe kodowanie}\\
+	Dane:\\
+	1 1 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 1 0 1\\
+	Sekwencja robocza:\\
+	- + 0 - 0 0 0 V + 0 0 0 V - + B 0 0 V + - + 0 0 0 V - + - + B 0 0 V + 0 -\\
+	Zakodowane dane:\\
+	- + 0 - 0 0 0 - + 0 0 0 + - + - 0 0 - + - + 0 0 0 + - + - + - 0 0 - + 0 -\\
+	\pagebreak
+	\section{2B1Q}
+	Jest to kod liniowy stosowany w styku U w ISDN oraz  w  HDSL. 2B1Q jest czteropoziomow¹ modulacj¹ amplitudy impulsu (PAM-4), mapuje dwa bity (2B) do jednego symbolu (1Q).
+	
+	W celu zminimalizowania przenoszenia siê b³êdu , pary bitowe (dibits) s¹ przypisane do poziomów napiêcia wed³ug kodu Grey'a w nastêpuj¹cy sposób:
+	\begin{table}[H]
+		\begin{center}
+			\includegraphics[scale=0.8]{r5}
+			\caption{Tabela dibitów 2B1Q}
+			\label{fig:s1}
+		\end{center}
+	\end{table}
+	Mo¿liwa jest tak¿e inna interpretacja poziomów sygna³y tzn.\\ +450mV = +3V; +150mV = +1V; -150mV = -1V; -450mV = -3V;
+	\section{Manchester}
+	Jest to kod bipolarny dwuwartoœciowy, gdzie "1" jest kodowana za pomoc¹ zbocza opadaj¹cego (1,-1), a "0" za pomoc¹ zbocza narastaj¹cego (-1,1). Istnieje równie¿ konwencja dla 802.3, gdzie to "1" jest narastaj¹ca, a "0" opadaj¹ce.
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.6]{r6}
+			\caption{Diagram kodu}
+			\label{fig:s1}
+		\end{center}
+	\end{figure}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.25]{r7}
+		\caption{Kodowanie Manchester}
+		\label{fig:s1}
+	\end{center}
+\end{figure}  
+	\section{RZ - Return to zero}
+	Kod stosowany w torach miedzianych zabezpieczaj¹cy przed d³ugimi ci¹gami (0) i (1). Polega na zakodowaniu "1" jako (10), a "0" jako (-10), czyli w danym znaku zawsze jest powrót do zera
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.6]{r8}
+			\caption{Diagram kodu}
+			\label{fig:s1}
+		\end{center}
+	\end{figure} 
+	\section{NRZ - No return to zero}
+	Zmodyfikowana wersja RZ - kodowanie odbywa siê w ten sam sposób, tyle ¿e nie wracamy do (0), a wiêc "1" kodujemy jako (1), a "0" jako (-1).
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.6]{r9}
+			\caption{Diagram kodu}
+			\label{fig:s1}
+		\end{center}
+	\end{figure} 
+	\section{CMI}
+	\section{MCMI}
+	\section{nBmB}	
+	\begin{figure}[H]
+	\begin{center}
+		\textsl{Na podstawie zeszytu do przedmiotu Transmisja Danych i Przetwarzanie Sygna³ów by Monika Baranowska \& Grzegorz Kantowicz}
+	\end{center}
+	\end{figure}
+\end{document}

@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Cel \'cwiczenia}{1}%
+\contentsline {section}{\numberline {2}Schemat pogl\k adowy}{1}%
+\contentsline {section}{\numberline {3}Wykonanie \'cwiczenia}{2}%
+\contentsline {subsection}{\numberline {3.1}Pomiar t\IeC {\l }umienia miernikiem mocy optycznej}{2}%
+\contentsline {subsection}{\numberline {3.2}Pomiar ORL miernikiem}{2}%
+\contentsline {section}{\numberline {4}Wnioski}{3}%
+\contentsline {subsection}{\numberline {4.1}Dyskusja wynik\'ow pomiar\'ow}{3}%
+\contentsline {subsubsection}{\numberline {4.1.1}Reflektancja}{3}%
+\contentsline {subsubsection}{\numberline {4.1.2}T\IeC {\l }umienno\'s\'c odbiciowa - \textit {Optical Return Loss}}{3}%
+\contentsline {subsection}{\numberline {4.2}Specyfikacja przyrz\k ad\'ow pomiarowych}{4}%

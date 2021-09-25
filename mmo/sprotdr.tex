@@ -1,0 +1,103 @@
+% !TeX spellcheck = pl_PL
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+\usepackage{float}
+\graphicspath{ {./res/} }
+%opening
+
+\begin{document}
+
+
+\begin{titlepage}
+
+
+\date{28 Maja, 2020}
+\title
+{
+\begin{center}
+	\includegraphics{logo}\\
+	\Huge Pracownia Konfiguracji i Monta¿u Systemów Komutacyjnych\\		
+	\Large \vspace{5mm} Sprawozdanie 5/Seria 2\\
+	\large \smallskip Pomiar t³umienia i t³umiennoœci odbiciowej (ORL)
+	toru œwiat³owodowego metod¹ transmisyjn¹. Automatyzacja pomiarów.
+	\pagenumbering{}
+\end{center}
+}
+\author{\medskip Micha³ Wiliñski, zespó³ 3, grupa 2, klasa IIID}
+\maketitle
+\vspace*{\fill}
+\tableofcontents
+\end{titlepage}
+\pagenumbering{arabic}
+\section{Cel æwiczenia}
+Zapoznanie z budow¹, zasad¹ dzia³ania i metodami kalibracji miernika mocy optycznej oraz
+realizacja pomiarów wartoœci t³umienia i t³umiennoœci odbiciowej toru œwiat³owodowego.
+\section{Schemat pogl¹dowy}
+\begin{figure}[H]
+	\begin{center}
+	\title{Schemat kalibracyjny}
+	\includegraphics[scale=0.45]{schem1}
+	\end{center}
+\end{figure}
+\begin{figure}[H]
+	\begin{center}
+		\title{Schemat pomiarowy}
+		\includegraphics[scale=0.45]{schem2}
+	\end{center}
+\end{figure}
+\section{Wykonanie æwiczenia}
+Poszczególne metody kalibracyjne i pomiarowe zostan¹ opisane w dzia³ach im odpowiednich. Najwa¿niejsz¹ spraw¹ jest \textbf{zerowanie} miernika po ka¿dym pomiarze, a zw³aszcza po zmianie warunków pomiaru. Powinno siê pracowaæ na rozgrzanym ju¿ sprzêcie (laserze) - pozwala to na wiêksz¹ jego stabilnoœæ a co za tym idzie dok³adniejsze pomiary.
+\subsection{Pomiar t³umienia miernikiem mocy optycznej}
+Pomiar rozpoczêliœmy od kalibracji miernika mocy optycznej, czyli zbudowania uk³adu kalibracyjnego i za pomoc¹ niego wyznaczenia zera pomiarowego - do którego bêdziemy siê odnosiæ. Nastêpnie wykonaliœmy dla obu okien pomiary metod¹ \textit{tradycyjn¹} - zwyk³y pomiar t³umienia toru w jednym kierunku (oznaczony jako \textbf{OPM}), a nastêpnie skorzystaliœmy z zawartej w tytule æwiczenia automatyzacji pomiarów i wykonaliœmy pomiar dwukierunkowy (oznaczony jako \textbf{bi-dir}) - komunikacja pomiêdzy tymi miernikami umo¿liwia tego typu dzia³ania. Wykonane pomiary przedstawiliœmy w tabeli poni¿ej wraz z obliczeniami.
+\begin{table}[H]
+	\begin{center}
+		\includegraphics[scale=0.73]{tab1}
+		\caption{Tabela pomiaru mocy t³umenia}
+		\label{fig:s1}
+	\end{center}
+\end{table}
+\subsection{Pomiar ORL miernikiem}
+Rozpoczêliœmy od kalibracji mierników i ich wyzerowania. Podobnie jak w poprzednim kroku pomiary odbywa³y siê metod¹ \textit{tradycyjn¹}(oznaczone jako \textbf{ORL}) i automatyczn¹ dwukierunkow¹(oznaczone jako \textbf{bi-dir}). Wyniki pomiarów i obliczenia zosta³y przedstawione w tabeli poni¿ej.
+\begin{table}[H]
+	\begin{center}
+		\includegraphics[scale=0.73]{tab2}
+		\caption{Tabela pomiaru ORL}
+		\label{fig:s1}
+	\end{center}
+\end{table}
+\section{Wnioski}
+Æwiczenie by³o wymagaj¹ce pod wzglêdem obs³ugi mierników - maj¹ one wiele wad i nieœcis³oœci, jednak praca z wymagaj¹cym sprzêtem potrafi daæ wiele doœwiadczenia, które zostanie opisane poni¿ej. Obliczenia nie sprawi³y problemów.
+\subsection{Dyskusja wyników pomiarów}
+W instrukcji æwiczenia Autor zauwa¿a istotn¹ ró¿nicê pomiêdzy dwoma czêsto mylonymi pojêciami - \textbf{reflektancj¹ i t³umiennoœci¹ odbiciow¹}. Rozró¿nijmy wiêc te dwa pojêcia i skonfrontujmy z wynikami pomiarów.
+\subsubsection{Reflektancja}
+Reflektancja jest stosunkiem (wyra¿onym w decybelach) mocy sygna³u odbitego
+w danym punkcie do mocy sygna³u padaj¹cego na ten punkt odbicia. Nie jest wyra¿a ona ca³kowitych strat odbiciowych danego w³ókna.\\ \underline{Przyjmuje ona zawsze wartoœci ujemne.}\\
+\subsubsection{T³umiennoœæ odbiciowa - \textit{Optical Return Loss}}
+Optyczna t³umiennoœæ odbiciowa jest definiowana jako stosunek (wyra¿any w decybelach)
+mocy sygna³u powracaj¹cego z systemu lub ³¹cza œwiat³owodowego do mocy sygna³u
+wprowadzanego do tego systemu lub ³¹cza.\\ \underline{Przyjmuje ona zawsze wartoœci dodatnie.}\bigskip
+
+Jak mo¿emy zauwa¿yæ w tabeli 2 - raz ORL przyjmuje wartoœci dodatnie a raz ujemne. Oznacza to ¿e producent mo¿e myliæ te dwa pojêcia lub wystêpuje tutaj zale¿noœæ mierzonego zjawiska od d³ugoœci w³ókna. Przy w³óknach d³u¿szych wystêpuje pomiar reflektancji od bli¿ej nieokreœlonego zdarzenia, natomiast przy w³óknach krótszych pomiar ORL. Taka zale¿noœæ nie wystêpuje w instrukcji czy specyfikacji, wiêc mo¿e byæ to wada produktu.
+
+
+\subsection{Specyfikacja przyrz¹dów pomiarowych}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.4]{mier}
+		\caption{VEX FX45}
+		\label{fig:s1}
+	\end{center}
+\end{figure}
+\begin{table}[H]
+	\begin{center}
+		\includegraphics[scale=0.55]{char}
+		\caption{Specyfikacja miernika VeEX FX45}
+		\label{fig:s1}
+	\end{center}
+\end{table}
+\listoffigures
+\listoftables
+\end{document}
